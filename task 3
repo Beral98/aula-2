@@ -1,0 +1,15 @@
+<?php
+$weight = readline('Enter your weight in kilos ');
+$height = readline('Enter your height in meters ');
+
+$imc = $weight / ($height * $height);
+
+if($imc < 18.5){
+    echo 'Under weight ';
+}else if ($imc <= 24.9){
+    echo 'Normal weight ';
+}else if($imc <= 29.9){
+    echo 'Over weight ';
+}else{
+    echo 'Obese ';
+}
